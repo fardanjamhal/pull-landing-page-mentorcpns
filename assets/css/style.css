@@ -473,8 +473,8 @@ h6 {
   /* background-color: #106eea; */
   /* background: linear-gradient(to bottom, #1a6fd0, #4ec7f3); */
 
-  height: 100%;
-  background: var(--primary-biru);
+  height: 100vh;
+  background: #1D24CA;
   background-size: cover;
   position: relative;
   box-sizing: border-box;
@@ -520,35 +520,15 @@ h6 {
   text-align: center;
 }
 
-    /* animasi kedap kedip fardan */
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    .blinking-text {
-      animation: blink 0.4s infinite;
-    }
-    /* animasi kedap kedip fardan */
-
-
 .editfardan img {
   margin: auto; /* Memastikan gambar di tengah secara horizontal */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan */
-  max-width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+  width: 49%; /* Gambar akan menyesuaikan lebar kontainer */
 }
 
 #hero h1 {
   margin: 0;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 56px;
 
   background-color: #ffffff;
@@ -566,7 +546,7 @@ h6 {
 
 #hero h2 {
   /* color: #555555; */
-  color: #2a2a2a;
+  color: #f8e300;
   margin: 5px 0 30px 0;
   font-size: 18px;
   font-weight: 400;
@@ -620,9 +600,16 @@ h6 {
 
 
 @media (max-width: 768px) {
+  
+  #hero {
+    height: 80vh;
+  }
+
+
   #hero h1 {
-    font-size: 26px;
-    font-weight: 700;
+    margin: 2vh;
+    font-size: 23px;
+    font-weight: 600;
     line-height: 29px;
   }
 
@@ -630,13 +617,17 @@ h6 {
     font-size: 16px;
   }
 
+  .container .kotakfardan {
+    height: 99%;
+  }
+
   .container .editfardan2 {
+    height: auto;
     text-align: center;
-    padding-top: 12px;
   }
 
   .editfardan img {
-    max-width: 60%; /* Gambar akan menyesuaikan lebar kontainer */
+    width: 93%; /* Gambar akan menyesuaikan lebar kontainer */
   }
   
   #hero .btn-get-started {
@@ -2132,6 +2123,15 @@ section {
 /*--------------------------------------------------------------
 # Keuntungan Belajar di Mentor CPNS
 --------------------------------------------------------------*/
+.container-keuntungan-belajar {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+
 
 .keuntungan-belajar {
   display: flex;
@@ -2147,12 +2147,23 @@ section {
 
 @media (max-width: 768px) {
 
- .keuntungan-belajar img {
-  width: 100%; /* Gambar tetap responsif */
-  align-self: center;
- }
+  .container-keuntungan-belajar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
-  
+    .keuntungan-belajar {
+      padding-left: 29px;
+      padding-right: 29px;
+      text-align: center; /* Pusatkan teks */
+    }
+
+    .keuntungan-belajar img {
+        width: 100%; /* Pastikan gambar tidak melebihi lebar container */
+        height: auto; /* Sesuaikan tinggi gambar agar proporsional */
+    }
+
 }
 
 
@@ -2179,3 +2190,6 @@ section {
   width: 100%;
   height: 315px; /* Tinggi video default */
 }
+
+
+
