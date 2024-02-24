@@ -473,7 +473,7 @@ h6 {
   /* background-color: #106eea; */
   /* background: linear-gradient(to bottom, #1a6fd0, #4ec7f3); */
 
-  height: 100vh;
+  height: 90vh;
   background: #1D24CA;
   background-size: cover;
   position: relative;
@@ -527,7 +527,7 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 600;
   line-height: 56px;
 
@@ -607,14 +607,14 @@ h6 {
 
 
   #hero h1 {
-    margin: 2vh;
-    font-size: 21px;
+    margin: 1vh;
+    font-size: 19px;
     font-weight: 600;
     line-height: 29px;
   }
 
   #hero h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .container .kotakfardan {
