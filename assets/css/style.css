@@ -2144,6 +2144,28 @@ section {
   align-self: center;
 }
 
+.icon-with-text {
+  font-family: Arial, sans-serif; /* Menggunakan font yang konsisten */
+  font-size: 14px; /* Ukuran teks */
+  color: #ffffff; /* Warna teks */
+  border-collapse: collapse; /* Menggabungkan batas antar sel */
+  width: 100%;
+}
+
+.icon-with-text td {
+  padding: 8px; /* Ruang di sekitar konten dalam sel */
+  border: 1px solid #ccc; /* Garis batas sel */
+  text-align: left; /* Penempatan teks di dalam sel */
+  vertical-align: top; /* Penempatan vertikal teks di atas */
+}
+
+.icon-with-text i {
+  font-size: 1.5em; /* Ukuran ikon */
+}
+
+.container-keuntungan-belajar img {
+  width: 30%;
+}
 
 @media (max-width: 768px) {
 
@@ -2162,6 +2184,10 @@ section {
     .keuntungan-belajar img {
         width: 100%; /* Pastikan gambar tidak melebihi lebar container */
         height: auto; /* Sesuaikan tinggi gambar agar proporsional */
+    }
+
+    .container-keuntungan-belajar img {
+      width: 100%;
     }
 
 }
