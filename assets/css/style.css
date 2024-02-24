@@ -523,7 +523,33 @@ h6 {
 .editfardan img {
   margin: auto; /* Memastikan gambar di tengah secara horizontal */
   width: 49%; /* Gambar akan menyesuaikan lebar kontainer */
+  animation: blink 1s infinite alternate; /* Animasi bayangan kedap-kedip */
 }
+
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.efekfardan {
+  animation: blink 1s infinite alternate; /* Animasi bayangan kedap-kedip */
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+
 
 #hero h1 {
   margin: 0;
@@ -614,7 +640,7 @@ h6 {
   }
 
   #hero h2 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .container .kotakfardan {
@@ -1675,10 +1701,12 @@ section {
 
 .pricing .hargafardan {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 95%;
-  justify-content: center;
-  align-items: center;
+  margin: auto; /* Mengatur margin menjadi auto */
+  justify-content: center; /* Properti ini hanya berlaku untuk flexbox container */
+  align-items: center; /* Properti ini hanya berlaku untuk flexbox container */
+  text-align: center;
 }
 
 .pricing .hargafardan .boxfardan {
