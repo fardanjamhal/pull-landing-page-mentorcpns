@@ -522,7 +522,7 @@ h6 {
 
 .editfardan img {
   margin: auto; /* Memastikan gambar di tengah secara horizontal */
-  width: 26%; /* Gambar akan menyesuaikan lebar kontainer */
+  width: 39vh; /* Gambar akan menyesuaikan lebar kontainer */
   /* animation: blink 1s infinite alternate; */
 }
 
@@ -653,7 +653,7 @@ h6 {
   }
 
   .editfardan img {
-    width: 64%; /* Gambar akan menyesuaikan lebar kontainer */
+    width: 32vh; /* Gambar akan menyesuaikan lebar kontainer */
   }
   
   #hero .btn-get-started {
